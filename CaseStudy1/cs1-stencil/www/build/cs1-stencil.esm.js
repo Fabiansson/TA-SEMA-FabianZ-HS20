@@ -1,0 +1,1 @@
+import{p as o,b as p}from"./p-f75b94ff.js";(()=>{const p=import.meta.url,c={};return""!==p&&(c.resourcesUrl=new URL(".",p).href),o(c)})().then((o=>p([["p-71a47273",[[1,"card-component"]]],["p-a9c1f80c",[[1,"my-component",{cards:[32]}]]]],o)));

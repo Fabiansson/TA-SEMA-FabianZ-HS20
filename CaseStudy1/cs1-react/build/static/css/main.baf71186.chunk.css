@@ -1,0 +1,2 @@
+.grid{grid-template-columns:repeat(4,300px);grid-gap:20px;width:1260px;margin-left:auto;margin-right:auto}.card,.grid{display:grid}.card{width:300px;color:#000;font-size:20px;box-shadow:0 1.6px 3.6px rgba(0,0,0,.13),0 .3px .9px rgba(0,0,0,.11);background:#fff;font-family:Georgia;grid-template-rows:174px 176px;grid-template-columns:1fr}.image{width:100%;height:100%;object-fit:cover}.text{margin:8px 16px;overflow:hidden;max-height:160px;line-height:28px}
+/*# sourceMappingURL=main.baf71186.chunk.css.map */
