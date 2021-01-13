@@ -1,0 +1,1 @@
+import{s as o}from"./p-3daa696c.js";const r=({profile:o,errors:r})=>({success:!(!o||!o.username),profile:o,errors:r}),s=async(s,t)=>{const e=await o({path:"profiles/"+s,method:"GET",token:t});return r(e)},t=async(s,t,e)=>{const a=await o({path:`profiles/${s}/follow`,method:e?"DELETE":"POST",token:t});return r(a)};export{t as f,s as g}

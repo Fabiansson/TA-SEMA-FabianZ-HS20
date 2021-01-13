@@ -1,0 +1,17 @@
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <title>Conduit - Stencil</title> <meta name="Description" content="Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil!"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <meta name="theme-color" content="#16161d"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta http-equiv="x-ua-compatible" content="IE=Edge"> <link rel="preconnect" href="https://fonts.gstatic.com"> <script type="module" src="/build/app.esm.js" data-stencil data-resources-url="/build/" data-stencil-namespace="app"></script> <script nomodule="" src="/build/app.js" data-stencil></script> <noscript>This page requires JavaScript to run</noscript> <link href="/build/app.css" rel="stylesheet"> <!-- <link rel="stylesheet" href="//demo.productionready.io/main.css" /> --> <link href="//fonts.googleapis.com/css?family=Titillium+Web:700|Source+Serif+Pro:400,700|Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic,700italic&amp;display=swap" rel="stylesheet" type="text/css"> <script async="" defer="" type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script> <script async="" defer="" nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script> <link rel="apple-touch-icon" href="/assets/icon/icon.png"> <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico"> <link rel="manifest" href="/manifest.json"> </head> <body> <app-root></app-root> <script data-build="2020-12-23T12:54:18">
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  window.addEventListener('load', function() {
+  navigator.serviceWorker.register('/sw.js')
+    .then(function(reg) {
+    reg.onupdatefound = function() {
+      var installingWorker = reg.installing;
+      installingWorker.onstatechange = function() {
+      if (installingWorker.state === 'installed') {
+        window.dispatchEvent(new Event('swUpdate'))
+      }
+      }
+    }
+    })
+    .catch(function(err) { console.error('service worker error', err) });
+  });
+}</script></body></html>

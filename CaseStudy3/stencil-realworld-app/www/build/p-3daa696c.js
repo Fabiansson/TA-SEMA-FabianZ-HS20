@@ -1,0 +1,1 @@
+const t=async({path:t,method:o,body:e,token:n})=>{const a="https://conduit.productionready.io/api/"+t;let c={"content-type":"application/json"};n&&(c=Object.assign(Object.assign({},c),{authorization:"Token "+n}));try{const t=await fetch(a,{credentials:"omit",headers:c,method:o,body:e,mode:"cors"});return await t.json()}catch(t){return console.error(t),{errors:t}}};export{t as s}

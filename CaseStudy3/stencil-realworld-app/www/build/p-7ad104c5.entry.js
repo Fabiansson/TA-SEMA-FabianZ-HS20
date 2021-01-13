@@ -1,0 +1,1 @@
+import{r as s,h as r}from"./p-169f3d6f.js";const t=class{constructor(r){s(this,r)}render(){return this.errors?r("ul",{class:"error-messages"},Object.keys(this.errors).map((s=>this.errors[s].map((t=>r("li",null,s," ",t)))))):null}};export{t as error_display}

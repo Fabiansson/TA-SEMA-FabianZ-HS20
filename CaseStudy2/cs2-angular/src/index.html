@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cs2Angular</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+  <script>const template=document.createElement("template");template.innerHTML='\n<div class="card">\n<img class="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkvvDuPwAFgQLKpGTOcgAAAABJRU5ErkJggg==" alt="" width="300" height="174" />\n<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>\n<form>\n    <label>First name:</label><br />\n    <input type="text" id="fname" name="fname" /><br />\n    <label>Last name:</label><br />\n    <input type="text" id="lname" name="lname" /><br />\n\n    <button type="reset">Reset</button>\n    <button type="submit">Send</button>\n</form>\n</div>\n  <style>\n  .card {\n    width: 300px;\n    color: #000000;\n    display: grid;\n    font-size: 20px;\n    box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.13), 0px 0.3px 0.9px rgba(0, 0, 0, 0.11);\n    background: #FFFFFF;\n    font-family: Georgia;\n    grid-template-rows: 174px 176px;\n    grid-template-columns: 1fr;\n  }\n  \n  .image {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n  \n  .text {\n    margin: 8px 16px;\n    overflow: hidden;\n    max-height: 160px;\n    line-height: 28px;\n  }\n   </style>',customElements.define("card-component",class extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"}),this.shadowRoot.appendChild(template.content.cloneNode(!0))}});</script>
+</body>
+</html>

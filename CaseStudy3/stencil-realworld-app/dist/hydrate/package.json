@@ -1,0 +1,6 @@
+{
+  "name": "stencil-realworld-example-app/hydrate",
+  "description": "App component hydration app.",
+  "main": "index.js",
+  "types": "index.d.ts"
+}
